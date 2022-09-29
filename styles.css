@@ -1,5 +1,5 @@
 body{
-    background: purple;
+    background: white;
     /* font-family: sans-serif; */
     font-family:'Gill Sans MT';
     display: block;
@@ -54,7 +54,7 @@ button {
     align-items: center;
     background-color: white;
     width: 100%;
-    border-bottom: #7649c0;
+    /* border-width: 2em; */
 }
 
 .circle {
