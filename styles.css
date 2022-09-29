@@ -1,11 +1,27 @@
-#container{
+body{
     background: purple;
+    display: flex;
+    padding: 0;
 }
 
 #nav{
     background-color: green;
+    width: 15%;
 }
 
 #content{
     background-color: blue;
+    width: 90%;
+    margin: 0;
+    height: 100%;
+    display: flex;
+}
+
+#banner{
+    background-image: url("./images/colors.jpg");
+    background-size: cover;
+    width: 100%;
+    font-size: 3em;
+    text-align: center;
+    /* background-image: "./images/blue.jpg"; */
 }
