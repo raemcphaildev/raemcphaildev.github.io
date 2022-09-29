@@ -26,6 +26,18 @@ h5{
     font-weight: 100;
 }
 
+
+button {
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    color: white;
+    /* text-decoration: underline; */
+    cursor: pointer;
+    display: flex;
+    font-size: 1.4em;
+  }
+
 #banner{
     background-image: url("./images/colors.jpg");
     background-size: cover;
@@ -60,12 +72,14 @@ h5{
 #nav{
     background-color: #7649c0;
     width: 15%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 #content{
     background-color: white;
-    width: 90%;
+    width: 85%;
     margin: 0;
     height: 100%;
     display: block;
