@@ -1,5 +1,5 @@
 body{
-    background: white;
+    background: green;
     /* font-family: sans-serif; */
     font-family:'Gill Sans MT';
     display: block;
@@ -15,6 +15,7 @@ h1{
 
 h2{
     font-weight: 100;
+    font-size: 2em;
 }
 
 h5{
@@ -54,34 +55,40 @@ button {
     align-items: center;
     background-color: white;
     width: 100%;
+    margin-bottom: 0;
+    border-style:solid;
     /* border-width: 2em; */
-}
-
-.circle {
-    background: lightblue;
-    border-radius: 50%;
-    width: 1.5em;
-    height: 1.5em;
 }
 
 #container{
     display: flex;
-    height: 100%;
+    border:black;
 }
 
 #nav{
     background-color: #7649c0;
     width: 15%;
+    height: max-content;
+    height: inherit;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    
+    position:sticky;
+    top:0px;
+}
+
+#profile{
+    border: white;
 }
 
 #content{
     background-color: white;
-    width: 85%;
     margin: 0;
     height: 100%;
     display: block;
+    padding: 3%;
+    overflow-y: auto;
+    /* margin-left: 15%; */
 }
 
