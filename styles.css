@@ -1,31 +1,53 @@
 body{
     background: purple;
+    font-family: sans-serif;
     display: block;
     padding: 0;
     margin: 0;
+
+    overflow-x:hidden;
+}
+
+h1{
+    font-size: 6em;
+}
+
+h5{
+    display: inline;
+    font-size: 1.5em;
+    margin-left: 3em;
+    margin-right: 3em;
 }
 
 #banner{
     background-image: url("./images/colors.jpg");
     background-size: cover;
     width: 100%;
-    font-size: 3em;
-    padding: 1em;
     text-align: center;
-    /* background-image: "./images/blue.jpg"; */
+    padding: 1em;
+    margin: 0;
+}
+
+#myInfo{
+    display: inline-block;
+    background-color: #ffffff;
+    width: 100%;
+    text-align: center;
 }
 
 #container{
     display: flex;
+    height: 100%;
 }
 
 #nav{
-    background-color: green;
+    background-color: #7649c0;
     width: 15%;
+    height: 100%;
 }
 
 #content{
-    background-color: blue;
+    background-color: white;
     width: 90%;
     margin: 0;
     height: 100%;
