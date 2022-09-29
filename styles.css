@@ -1,22 +1,29 @@
 body{
     background: purple;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
+    font-family:'Gill Sans MT';
     display: block;
     padding: 0;
     margin: 0;
-
     overflow-x:hidden;
 }
 
 h1{
     font-size: 6em;
+    font-weight: 100;
+}
+
+h2{
+    font-weight: 100;
 }
 
 h5{
     display: inline;
     font-size: 1.5em;
-    margin-left: 3em;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
     margin-right: 3em;
+    font-weight: 100;
 }
 
 #banner{
@@ -29,10 +36,20 @@ h5{
 }
 
 #myInfo{
-    display: inline-block;
-    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
     width: 100%;
-    text-align: center;
+    border-bottom: #7649c0;
+}
+
+.circle {
+    background: lightblue;
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
 }
 
 #container{
@@ -51,6 +68,6 @@ h5{
     width: 90%;
     margin: 0;
     height: 100%;
-    display: flex;
+    display: block;
 }
 
