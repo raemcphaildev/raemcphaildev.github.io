@@ -28,7 +28,7 @@ h5{
 }
 
 
-button {
+button, a{
     background: none!important;
     border: none;
     padding: 0!important;
