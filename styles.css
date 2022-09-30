@@ -73,7 +73,7 @@ button {
 
 #nav{
     background-color: #7649c0;
-    width: 15%;
+    width: 20%;
     height: 100%;
     display: block;
     padding:1em;
@@ -82,7 +82,8 @@ button {
 #profile{
     border: white;
     border-style: solid;
-    max-width: 90%;
+    /* max-width: 90%; */
+    width: 98%;
     /* width: 250px */
 }
 
@@ -90,6 +91,7 @@ button {
     background-color: white;
     margin: 0;
     height: 100%;
+    width: 80%;
     display: block;
     padding: 3%;
     overflow-y: scroll;
