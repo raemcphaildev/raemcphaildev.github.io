@@ -1,5 +1,5 @@
 body{
-    background: green;
+    background: #7649c0;
     /* font-family: sans-serif; */
     font-family:'Gill Sans MT';
     display: block;
@@ -37,6 +37,7 @@ button {
     cursor: pointer;
     display: flex;
     font-size: 1.4em;
+    margin: 1em;
   }
 
 #banner{
@@ -72,15 +73,16 @@ button {
 #nav{
     background-color: #7649c0;
     width: 15%;
-    height: max-content;
-    height: inherit;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    height: 100%;
+    display: block;
+    padding:1em;
 }
 
 #profile{
     border: white;
+    border-style: solid;
+    max-width: 90%;
+    min-width: 300px
 }
 
 #content{
