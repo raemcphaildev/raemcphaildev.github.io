@@ -98,3 +98,11 @@ button, a{
     /* margin-left: 15%; */
 }
 
+@media only screen and (max-width: 600px){
+    #content{
+        background-color: green;
+    }
+    #nav{
+        background-color: aqua;
+    }
+}
