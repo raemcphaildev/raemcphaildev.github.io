@@ -98,11 +98,31 @@ button, a{
     /* margin-left: 15%; */
 }
 
+#mobileNav{
+    display: none;
+}
+#drawer-toggle { 
+    display: none;
+}
+
 @media only screen and (max-width: 600px){
+    #container{
+        display: block;
+    }
     #content{
         background-color: green;
+        width: 100%;
     }
     #nav{
-        background-color: aqua;
+        display: none;
+    }
+    #myInfo{
+        display: none;
+    }
+    #mobileNav{
+        display: block;
+    }
+    #drawer-toggle { 
+        position: absolute; 
     }
 }
