@@ -98,19 +98,33 @@ button, a{
     /* margin-left: 15%; */
 }
 
-#mobileNav{
+#drawer{
     display: none;
 }
-#drawer-toggle { 
+#drawer-toggle{
     display: none;
 }
+
+* { 
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    -o-box-sizing: border-box; 
+    box-sizing: border-box; 
+    /* adds animation for all transitions */ 
+    -webkit-transition: .25s ease-in-out; 
+    -moz-transition: .25s ease-in-out; 
+    -o-transition: .25s ease-in-out; 
+    transition: .25s ease-in-out; 
+    margin: 0; 
+    padding: 0; 
+    -webkit-text-size-adjust: none; 
+    } 
 
 @media only screen and (max-width: 600px){
     #container{
         display: block;
     }
     #content{
-        background-color: green;
         width: 100%;
     }
     #nav{
@@ -119,10 +133,42 @@ button, a{
     #myInfo{
         display: none;
     }
-    #mobileNav{
+    #banner{
+        display: none;
+    }
+    #drawer{
         display: block;
     }
-    #drawer-toggle { 
-        position: absolute; 
+    #drawer-toggle{
+        display:flex;
+        position: absolute;
     }
+    #drawer-toggle-label { 
+        -webkit-touch-callout: none; 
+        -webkit-user-select: none; 
+        -khtml-user-select: none; 
+        -moz-user-select: none; 
+        -ms-user-select: none; 
+        user-select: none; 
+        left: 0px; 
+        height:50px; 
+        width: 50px; 
+        display: block; 
+        position: fixed; 
+        background: rgba(255,255,255,.0); 
+        z-index: 1; 
+    }
+    #drawer-toggle-label:before { 
+        content: ''; 
+        display: block; 
+        position: absolute; 
+        height: 2px; 
+        width: 24px; 
+        background: #8d8d8d; 
+        left: 13px; 
+        top: 18px; 
+        box-shadow: 0 6px 0 #8d8d8d, 0 12px 0 #8d8d8d; 
+        }  
+
+            
 }
