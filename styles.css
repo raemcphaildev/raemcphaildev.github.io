@@ -109,9 +109,9 @@ button, a{
     justify-content: center;
 }
 
-/* #drawer{
-    display: none;
-} */
+#drawer{
+    background-color: blue;
+}
 
 /* Hide the browser's default checkbox */
 .drawer input{
@@ -139,6 +139,10 @@ button, a{
   /* When the checkbox is checked, add a blue background */
   .drawer input:checked ~ .drawerToggle {
     background-color: #2196F3;
+  }
+  /* Should open drawer when checked */
+  .drawer input:checked + #drawer{
+    background-color: #7649c0;
   }
   
   /* Create the checkmark/indicator (hidden when not checked) */
@@ -200,36 +204,4 @@ button, a{
     #banner{
         display: none;
     }
-    /* #drawer-toggle{
-        display:block;
-        position: absolute;
-    } */
-    /* #drawer-toggle-label { 
-        -webkit-touch-callout: none; 
-        -webkit-user-select: none; 
-        -khtml-user-select: none; 
-        -moz-user-select: none; 
-        -ms-user-select: none; 
-        user-select: none; 
-        left: 0px; 
-        height:50px; 
-        width: 50px; 
-        display: block; 
-        position: fixed; 
-        background: rgba(255,255,255,.0); 
-        z-index: 1; 
-    }
-    #drawer-toggle-label:before { 
-        content: ''; 
-        display: block; 
-        position: absolute; 
-        height: 2px; 
-        width: 24px; 
-        background: #8d8d8d; 
-        left: 13px; 
-        top: 18px; 
-        box-shadow: 0 6px 0 #8d8d8d, 0 12px 0 #8d8d8d; 
-        }   */
-
-            
 }
