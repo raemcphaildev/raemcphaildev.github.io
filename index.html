@@ -16,14 +16,24 @@
         <h5> raemcphail@gmail.com</h5>
         <h5>Calgary, Alberta</h5>
     </div>
-    <input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
-    <label for="drawer-toggle" id="drawer-toggle-label"></label>
-    <div id="drawer">
-        <button onclick="document.getElementById('about').scrollIntoView()">About</button>
-        <button onclick="document.getElementById('education').scrollIntoView()">Education</button>
-        <button onclick="document.getElementById('experience').scrollIntoView()">Experience</button>
-        <button onclick="document.getElementById('projects').scrollIntoView()">Projects</button>
+    <div id="mobileDrawer">
+        <!-- <input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+        <label for="drawer-toggle" id="drawer-toggle-label"></label> -->
+        <div id="mobileHeader">
+            <label class="drawer">
+                <input type="checkbox">
+                <span class="drawerToggle"></span>
+            </label>
+            <h2>Rae McPhail</h2>
+        </div>
+        <!-- <div id="drawer">
+            <button onclick="document.getElementById('about').scrollIntoView()">About</button>
+            <button onclick="document.getElementById('education').scrollIntoView()">Education</button>
+            <button onclick="document.getElementById('experience').scrollIntoView()">Experience</button>
+            <button onclick="document.getElementById('projects').scrollIntoView()">Projects</button>
+        </div> -->
     </div>
+
     <div id="container">
         <div id="nav">
             <img src="./images/profilepic.jpeg" id="profile"alt="">

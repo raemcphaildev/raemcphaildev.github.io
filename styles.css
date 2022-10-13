@@ -98,12 +98,73 @@ button, a{
     /* margin-left: 15%; */
 }
 
-#drawer{
+#mobileDrawer{
     display: none;
 }
-#drawer-toggle{
-    display: none;
+#mobileHeader{
+    width: 100%;
+    background-color: #2196F3;
+    text-align: center;
+    padding: 1em;
+    justify-content: center;
 }
+
+/* #drawer{
+    display: none;
+} */
+
+/* Hide the browser's default checkbox */
+.drawer input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.drawerToggle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+/* On mouse-over, add a grey background color */
+.drawer:hover input ~ .drawerToggle {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .drawer input:checked ~ .drawerToggle {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .drawerToggle:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .drawer input:checked ~ .drawerToggle:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .drawer .drawerToggle:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
 
 * { 
     -webkit-box-sizing: border-box; 
@@ -127,6 +188,9 @@ button, a{
     #content{
         width: 100%;
     }
+    #mobileDrawer{
+        display: block;
+    }
     #nav{
         display: none;
     }
@@ -136,14 +200,11 @@ button, a{
     #banner{
         display: none;
     }
-    #drawer{
-        display: block;
-    }
-    #drawer-toggle{
-        display:flex;
+    /* #drawer-toggle{
+        display:block;
         position: absolute;
-    }
-    #drawer-toggle-label { 
+    } */
+    /* #drawer-toggle-label { 
         -webkit-touch-callout: none; 
         -webkit-user-select: none; 
         -khtml-user-select: none; 
@@ -168,7 +229,7 @@ button, a{
         left: 13px; 
         top: 18px; 
         box-shadow: 0 6px 0 #8d8d8d, 0 12px 0 #8d8d8d; 
-        }  
+        }   */
 
             
 }
