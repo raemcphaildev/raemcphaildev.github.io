@@ -1,7 +1,7 @@
 body{
     background: #7649c0;
     /* font-family: sans-serif; */
-    font-family:'Gill Sans MT';
+    font-family:'Gill Sans MT', Arial, Helvetica, sans-serif;
     display: block;
     padding: 0;
     margin: 0;
@@ -103,15 +103,65 @@ button, a{
 }
 #mobileHeader{
     width: 100%;
-    background-color: #2196F3;
+    background-color: #7649c0;
     text-align: center;
     padding: 1em;
     justify-content: center;
 }
 
 #drawer{
-    background-color: blue;
+    background-color: #7649c0;
+    display: none;
 }
+
+.wrapper{
+    background-color: green;
+    height: 100%;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+  }
+  
+  .hamburger{
+    width: 100px;
+    height: 100px;
+    background: #032F41;
+    box-shadow: 0 0 15px rgba(3,47,65,1);
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+  }
+  
+  .hamburger > div{
+    position: absolute;
+      height: 10px;
+    background: #fff;
+    transition: width 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .first{
+    width: 55px;
+    top: 25px;
+      left: 20px;
+  }
+  
+  .second{
+    width: 40px;
+   top: 45px;
+    left: 20px;
+  }
+  
+  .third{
+    width: 50px;
+    top: 65px;
+      left: 20px;
+  }
+  
+  .hamburger:hover div{
+    width: 60px;
+    transition: width 0.3s ease;
+  }
 
 @media only screen and (max-width: 600px){
     #container{
