@@ -6,7 +6,7 @@ body{
     padding: 0;
     margin: 0;
     overflow-x:hidden;
-    /* overflow-y: scroll; */
+    /* overflow-y:hidden; */
 }
 
 h1{
@@ -100,6 +100,7 @@ button, a{
     display: block;
     padding: 3%;
     overflow-y: scroll;
+    /* position: relative; */
     /* margin-left: 15%; */
 }
 
@@ -120,10 +121,11 @@ button, a{
 #drawer{
     background-color: #7649c0;
     display: none;
+    position: sticky;
 }
 
 #drawer > button{
-    color: grey;
+    color: lightgrey;
 }
 
 #drawer > button:hover{
