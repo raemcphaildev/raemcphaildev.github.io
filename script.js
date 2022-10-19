@@ -6,3 +6,9 @@ function toggleDrawer(){
         drawer.style.display = "block";
     }
 };
+
+function viewSection(section){
+    console.log(section);
+    drawer.style.display = "none";
+    document.getElementById(section).scrollIntoView();
+}

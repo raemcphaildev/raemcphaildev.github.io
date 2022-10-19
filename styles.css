@@ -83,6 +83,13 @@ button, a{
     /* position: sticky;
     top: 0; */
 }
+#nav > button{
+    color: lightgrey;
+}
+
+#nav > button:hover{
+    color: white;
+}
 
 #profile{
     border: white;
