@@ -6,6 +6,7 @@ body{
     padding: 0;
     margin: 0;
     overflow-x:hidden;
+    /* overflow-y: scroll; */
 }
 
 h1{
@@ -58,6 +59,9 @@ button, a{
     width: 100%;
     margin-bottom: 0;
     border-style:solid;
+    /* position: sticky;
+    top: 0; */
+    height: 50px;
     /* border-width: 2em; */
 }
 
@@ -66,9 +70,8 @@ button, a{
     border:black;
     height:800px;
     width:100%;
-
-    position: sticky;
     top: 0;
+    /* overflow-y: scroll; */
 }
 
 #nav{
@@ -77,6 +80,8 @@ button, a{
     height: 100%;
     display: block;
     padding:1em;
+    /* position: sticky;
+    top: 0; */
 }
 
 #profile{
@@ -103,6 +108,7 @@ button, a{
 }
 #mobileHeader{
     width: 100%;
+    position: sticky;
     background-color: #7649c0;
     color: white;
     display: flex;
@@ -116,8 +122,16 @@ button, a{
     display: none;
 }
 
+#drawer > button{
+    color: grey;
+}
+
+#drawer > button:hover{
+    color: white;
+}
+
 .wrapper{
-    background-color: green;
+    /* background-color: green; */
     height: 100%;
     /* top: 50%;
     left: 50%;
@@ -127,11 +141,13 @@ button, a{
   .hamburger{
     width: 50px;
     height: 50px;
-    background: #032F41;
+    background: #7649c0;
     box-shadow: 0 0 15px rgba(3,47,65,1);
     cursor: pointer;
     position: relative;
     border-radius: 5px;
+    border-color: #fff;
+    border-style: solid;
   }
   
   .hamburger > div{
