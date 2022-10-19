@@ -104,9 +104,11 @@ button, a{
 #mobileHeader{
     width: 100%;
     background-color: #7649c0;
-    text-align: center;
-    padding: 1em;
-    justify-content: center;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 #drawer{
