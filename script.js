@@ -1,8 +1,10 @@
 function toggleDrawer(){
     let drawer = document.getElementById("drawer");
-    if (drawer.style.display === "none") {
-        drawer.style.display = "block";
-    } else {
+    console.log("Display is: ")
+    console.log(drawer.style.display);
+    if (drawer.style.display === "block") {
         drawer.style.display = "none";
+    } else {
+        drawer.style.display = "block";
     }
 };
