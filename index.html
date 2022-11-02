@@ -9,46 +9,46 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <div id="banner">
-        <h1>Rae McPhail</h1>
-    </div>
-    <div id="myInfo">
-        <h5>(403)-437-1161</h5>
-        <h5> raemcphail@gmail.com</h5>
-        <h5>Calgary, Alberta</h5>
-    </div>
-    <div id="mobileDrawer">
-        <div id="mobileHeader">
-            <h2>Rae McPhail</h2>
-            <button class="drawerIcon" onclick="toggleDrawer()">
-                <div class="wrapper">
-                    <div class="hamburger">
-                      <div class="first"></div>
-                      <div class="second"></div>
-                      <div class="third"></div>
-                    </div>
-                  </div></button>
-           
-        </div>
-        <div id="drawer">
-            <hr>
-            <button onclick="viewSection('about')">About</button>
-            <button onclick="viewSection('education')">Education</button>
-            <button onclick="viewSection('experience')">Experience</button>
-            <button onclick="viewSection('projects')">Projects</button>
-        </div>
+    <div id="nav">
+        <!-- <img src="./images/profilepic.jpeg" id="profile"alt=""> -->
+        <button onclick="document.getElementById('about').scrollIntoView()">About</button>
+        <button onclick="document.getElementById('education').scrollIntoView()">Education</button>
+        <button onclick="document.getElementById('experience').scrollIntoView()">Experience</button>
+        <button onclick="document.getElementById('projects').scrollIntoView()">Projects</button>
+        <hr>
+        <a href="./RaeMcPhailResume.docx.pdf" download="RaeMcPhailResume.docx.pdf">Resume</a>
+        <a href="https://www.linkedin.com/in/rae-mcphail-2149b518b/">LinkedIn</a>
+        <a href="https://github.com/raemcphaildev">Github</a>
     </div>
     <div id="container">
-        <div id="nav">
-            <!-- <img src="./images/profilepic.jpeg" id="profile"alt=""> -->
-            <button onclick="document.getElementById('about').scrollIntoView()">About</button>
-            <button onclick="document.getElementById('education').scrollIntoView()">Education</button>
-            <button onclick="document.getElementById('experience').scrollIntoView()">Experience</button>
-            <button onclick="document.getElementById('projects').scrollIntoView()">Projects</button>
-            <hr>
-            <a href="./RaeMcPhailResume.docx.pdf" download="RaeMcPhailResume.docx.pdf">Resume</a>
-            <a href="https://www.linkedin.com/in/rae-mcphail-2149b518b/">LinkedIn</a>
-            <a href="https://github.com/raemcphaildev">Github</a>
+        <div id="banner">
+            <h1>Rae McPhail</h1>
+        </div>
+        <div id="myInfo">
+            <h5>(403)-437-1161</h5>
+            <h5> raemcphail@gmail.com</h5>
+            <h5>Calgary, Alberta</h5>
+        </div>
+        <div id="mobileDrawer">
+            <div id="mobileHeader">
+                <h2>Rae McPhail</h2>
+                <button class="drawerIcon" onclick="toggleDrawer()">
+                    <div class="wrapper">
+                        <div class="hamburger">
+                          <div class="first"></div>
+                          <div class="second"></div>
+                          <div class="third"></div>
+                        </div>
+                      </div></button>
+               
+            </div>
+            <div id="drawer">
+                <hr>
+                <button onclick="viewSection('about')">About</button>
+                <button onclick="viewSection('education')">Education</button>
+                <button onclick="viewSection('experience')">Experience</button>
+                <button onclick="viewSection('projects')">Projects</button>
+            </div>
         </div>
         <div id="content">
             <h2 id="about">About</h2>

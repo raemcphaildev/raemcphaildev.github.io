@@ -2,7 +2,7 @@ body{
     background: #7649c0;
     /* font-family: sans-serif; */
     font-family:'Gill Sans MT', Arial, Helvetica, sans-serif;
-    display: block;
+    display: flex;
     padding: 0;
     margin: 0;
     overflow-x: hidden;
@@ -65,12 +65,12 @@ button, a{
 }
 
 #container{
-    display: flex;
+    display: block;
     border:black;
-    height:800px;
+    height:100%;
     width:100%;
     top: 0;
-    overflow-y: hidden;
+    overflow-y: scroll;
 }
 
 #nav{
@@ -79,6 +79,7 @@ button, a{
     height: 100%;
     display: block;
     padding:1em;
+    position: absolute;
     /* justify-content: center; */
     /* position: sticky;
     top: 0; */
@@ -103,10 +104,9 @@ button, a{
     background-color: white;
     margin: 0;
     height: 100%;
-    width: 80%;
+    width: 100%;
     display: block;
     padding: 3%;
-    overflow-y: scroll;
     /* position: relative; */
     /* margin-left: 15%; */
 }
