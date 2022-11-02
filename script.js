@@ -10,6 +10,6 @@ function toggleDrawer(){
 function viewSection(section){
     console.log(section);
     drawer.style.display = "none";
-    // document.getElementById(section).scrollIntoView({block: "nearest", inline: "nearest"});
-    document.getElementById(section).scrollIntoView();
+    document.getElementById(section).scrollIntoView({block: "nearest", inline: "nearest"});
+    // document.getElementById(section).scrollIntoView();
 }
